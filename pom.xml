@@ -122,6 +122,11 @@
 			  <artifactId>iterator-maven-plugin</artifactId>
 			  <version>0.2</version>
 			</plugin>
+	        <plugin>
+	          <groupId>org.codehaus.mojo</groupId>
+	          <artifactId>axistools-maven-plugin</artifactId>
+	          <version>1.4</version>
+	        </plugin>
   			<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
   			<plugin>
   				<groupId>org.eclipse.m2e</groupId>
@@ -177,6 +182,25 @@
   									<versionRange>[0.2,)</versionRange>
   									<goals>
   										<goal>executor</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<execute/>
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>
+  										org.codehaus.mojo
+  									</groupId>
+  									<artifactId>
+  										axistools-maven-plugin
+  									</artifactId>
+  									<versionRange>
+  										[1.4,)
+  									</versionRange>
+  									<goals>
+  										<goal>wsdl2java</goal>
   									</goals>
   								</pluginExecutionFilter>
   								<action>
