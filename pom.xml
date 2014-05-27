@@ -3,7 +3,7 @@
 
   <groupId>fr.esrf.icat</groupId>
   <artifactId>icat-super-pom</artifactId>
-  <version>1.1</version>
+  <version>1.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>ICAT super-pom</name>
@@ -26,7 +26,7 @@
   	<developerConnection>scm:git:git@gitlab.esrf.fr:icat/super-pom.git</developerConnection>
   	<connection>http://gitlab.esrf.fr/icat/super-pom.git</connection>
   	<url>http://gitlab.esrf.fr/icat/super-pom</url>
-    <tag>release-v1.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencyManagement>
