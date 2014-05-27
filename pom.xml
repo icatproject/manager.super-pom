@@ -29,6 +29,14 @@
     <tag>HEAD</tag>
   </scm>
 
+    <distributionManagement>
+        <repository>
+            <id>local_repo</id>
+            <name>Local file system repository</name>
+            <url>file:///N:/mvn_repo</url>
+        </repository>
+    </distributionManagement>
+    
   <dependencyManagement>
   	<dependencies>
   		<dependency>
@@ -149,7 +157,7 @@
               <version>2.5</version>
               <configuration>
               	<tagNameFormat>release-v@{project.version}</tagNameFormat>
-                <goals>install</goals>
+                <goals>deploy</goals>
                 <autoVersionSubmodules>true</autoVersionSubmodules>
                 <arguments>-DskipTests</arguments>
               </configuration>
