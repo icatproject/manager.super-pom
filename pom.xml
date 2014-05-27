@@ -34,7 +34,8 @@
             <id>local_repo</id>
             <name>Local file system repository</name>
             <url>file:///N:/mvn_repo</url>
-            <uniqueVersion>false</uniqueVersion>
+            <!-- This is ignored by the deploy plugin at the moment, avoid deploying too often -->
+            <uniqueVersion>false</uniqueVersion> 
         </repository>
     </distributionManagement>
     
