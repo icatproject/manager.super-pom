@@ -24,7 +24,7 @@
   </properties>
 
   <scm>
-  	<developerConnection>scm:git:git@gitlab.esrf.fr:icat/super-pom.git</developerConnection>
+  	<developerConnection>scm:git:git://gitlab.esrf.fr/icat/super-pom.git</developerConnection>
   	<url>http://gitlab.esrf.fr/icat/super-pom</url>
   </scm>
 
