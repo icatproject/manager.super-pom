@@ -4,7 +4,7 @@
 
   <groupId>fr.esrf.icat</groupId>
   <artifactId>icat-super-pom</artifactId>
-  <version>1.0</version>
+  <version>0.9-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>ICAT super-pom</name>
@@ -22,6 +22,11 @@
     <slf4j.version>1.7.5</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
   </properties>
+
+  <scm>
+  	<developerConnection>scm:git:git@gitlab.esrf.fr:icat/super-pom.git</developerConnection>
+  	<url>http://gitlab.esrf.fr/icat/super-pom</url>
+  </scm>
 
   <dependencyManagement>
   	<dependencies>
@@ -136,6 +141,11 @@
 			  <groupId>org.codehaus.mojo</groupId>
 			  <artifactId>build-helper-maven-plugin</artifactId>
               <version>1.8</version>
+			</plugin>
+			<plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-release-plugin</artifactId>
+              <version>2.5</version>
 			</plugin>
   			<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
   			<plugin>
