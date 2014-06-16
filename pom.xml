@@ -29,6 +29,11 @@
     <tag>HEAD</tag>
   </scm>
 
+  <issueManagement>
+  	<system>JIRA</system>
+  	<url>http://jira.esrf.fr:8080/jira/browse/ICAT</url>
+  </issueManagement>
+
     <distributionManagement>
         <repository>
             <id>local_repo</id>
