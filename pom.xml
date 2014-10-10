@@ -44,6 +44,17 @@
         </repository>
     </distributionManagement>
     
+  <repositories>
+	<repository>
+		<id>icat</id>
+		<name>ICAT Repository</name>
+		<url>http://www.icatproject.org/mvn/repo</url>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</repository>
+  </repositories>
+
   <dependencyManagement>
   	<dependencies>
   		<dependency>
@@ -184,6 +195,11 @@
                 <arguments>-DskipTests</arguments>
               </configuration>
 			</plugin>
+	        <plugin>
+	          <groupId>org.jasig.maven</groupId>
+	          <artifactId>maven-notice-plugin</artifactId>
+	          <version>1.0.4</version>
+	        </plugin>
   			<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
   			<plugin>
   				<groupId>org.eclipse.m2e</groupId>
@@ -315,6 +331,42 @@
   									</versionRange>
   									<goals>
   										<goal>copy-dependencies</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<execute />
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>
+  										org.codehaus.mojo
+  									</groupId>
+  									<artifactId>
+  										license-maven-plugin
+  									</artifactId>
+  									<versionRange>
+  										[1.6,)
+  									</versionRange>
+  									<goals>
+  										<goal>add-third-party</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore></ignore>
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>org.jasig.maven</groupId>
+  									<artifactId>
+  										maven-notice-plugin
+  									</artifactId>
+  									<versionRange>
+  										[1.0.4,)
+  									</versionRange>
+  									<goals>
+  										<goal>generate</goal>
   									</goals>
   								</pluginExecutionFilter>
   								<action>
