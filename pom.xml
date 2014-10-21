@@ -350,6 +350,7 @@
   									</versionRange>
   									<goals>
   										<goal>add-third-party</goal>
+  										<goal>download-licenses</goal>
   									</goals>
   								</pluginExecutionFilter>
   								<action>
