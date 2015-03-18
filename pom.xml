@@ -53,7 +53,17 @@
 			<enabled>false</enabled>
 		</snapshots>
 	</repository>
-  </repositories>
+ 
+	<repository>
+		<id>JTango</id>
+		<name>Soleil Tango repository</name>
+		<url>http://www2.synchrotron-soleil.fr/controle/maven2/soleil/</url>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+	</repository>
+
+   </repositories>
 
   <dependencyManagement>
   	<dependencies>
