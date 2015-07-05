@@ -23,9 +23,9 @@
   </properties>
 
   <scm>
-  	<developerConnection>scm:git:git@gitlab.esrf.fr:icat/super-pom.git</developerConnection>
-  	<connection>scm:git:http://gitlab.esrf.fr/icat/super-pom.git</connection>
-  	<url>http://gitlab.esrf.fr/icat/super-pom</url>
+  	<developerConnection>scm:git:git@github.com:icatproject/manager.super-pom.git</developerConnection>
+  	<connection>scm:git:https://github.com/icatproject/manager.super-pom.git</connection>
+  	<url>https://github.com/icatproject/manager.super-pom</url>
     <tag>HEAD</tag>
   </scm>
 
